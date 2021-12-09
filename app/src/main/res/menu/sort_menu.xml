@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/name_sort_asc"
+        android:title="@string/name_sort_asc" />
+    <item
+        android:id="@+id/name_sort_desc"
+        android:title="@string/name_sort_desc" />
+    <item
+        android:id="@+id/quantity_sort_asc"
+        android:title="@string/quantity_sort_asc" />
+    <item
+        android:id="@+id/quantity_sort_desc"
+        android:title="@string/quantity_sort_desc" />
+    <item
+        android:id="@+id/percent_price_change_sort_asc"
+        android:title="@string/percent_price_change_sort_asc" />
+    <item
+        android:id="@+id/percent_price_change_sort_desc"
+        android:title="@string/percent_price_change_sort_desc" />
+</menu>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_standard"
+    app:cardCornerRadius="@dimen/margin_small"
+    app:cardElevation="@dimen/margin_standard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:padding="@dimen/margin_standard">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_standard"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/symbol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/place_holder" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standard"
+            android:textSize="@dimen/text_size_standard"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/name"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/place_holder" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_standard"
+            app:layout_constraintBottom_toTopOf="@id/percentChangeLastHour"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/symbol"
+            tools:text="@string/place_holder" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/trendTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standard"
+            android:text="@string/trend"
+            android:textSize="@dimen/text_size_extra_small"
+            app:layout_constraintBottom_toTopOf="@id/percentChangeLastHour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/price"
+            app:layout_constraintTop_toBottomOf="@id/symbol" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/trendIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:src="@drawable/ic_arrow"
+            app:layout_constraintBottom_toTopOf="@id/percentChangeLastHour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/trendTitle"
+            app:layout_constraintTop_toBottomOf="@id/symbol" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/percentChangeLastHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_standard"
+            app:layout_constraintBottom_toTopOf="@id/percentChangeLastDay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/price"
+            tools:text="@string/place_holder" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/percentChangeLastDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_standard"
+            app:layout_constraintBottom_toTopOf="@id/quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/percentChangeLastHour"
+            tools:text="@string/place_holder" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_standard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/percentChangeLastDay"
+            tools:text="@string/place_holder" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TwoUpApp</string>
+    <string name="place_holder">Place holder</string>
+    <string name="item_name">Name: %1$s</string>
+    <string name="item_symbol">Symbol: %1$s</string>
+    <string name="item_price">Price: %1$s $</string>
+    <string name="item_percent_change_last_hour">Percent change of price in last hour: %1$s %%</string>
+    <string name="item_percent_change_last_day">Percent change of price in last day: %1$s %%</string>
+    <string name="item_quantity">Quantity: %1$f</string>
+    <string name="name_sort_asc">By name ascending</string>
+    <string name="name_sort_desc">By name descending</string>/
+    <string name="quantity_sort_asc">By quantity ascending</string>
+    <string name="quantity_sort_desc" >By quantity descending</string>
+    <string name="percent_price_change_sort_asc" >By price change in day ascending</string>
+    <string name="percent_price_change_sort_desc" >By price change in day descending</string>
+    <string name="trend">trend:</string>
+    <string name="legend_title">Trends:</string>
+    <string name="no_change">No change</string>
+    <string name="decreasing">Decreasing</string>
+    <string name="growing">Growing</string>
+    <string name="error_getting_data">Error getting data %1$s</string>
+</resources>
